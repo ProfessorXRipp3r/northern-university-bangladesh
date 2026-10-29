@@ -1407,7 +1407,7 @@ window.NUB_DATA = {
         "perCreditFee": 3000.0,
         "waiver": 70.0,
         "previousDues": -3700.0,
-        "charge": 25200.0,
+        "charge": 25500.0,
         "receivable": 17500.0,
         "received": 17500.0,
         "presentDues": 0.0,
@@ -1439,7 +1439,7 @@ window.NUB_DATA = {
       },
       "financeSummary": {
         "semester": "Fall 2024",
-        "payable": 25200.0,
+        "payable": 25500.0,
         "paid": 17500.0,
         "dues": 3700.0,
         "cumulativeDues": 0.0
@@ -1487,7 +1487,7 @@ window.NUB_DATA = {
             "amount": 10500.0
           }
         ],
-        "totalCost": 25200.0,
+        "totalCost": 25500.0,
         "totalPaid": 17500.0,
         "dues": 3700.0,
         "duesTill": 0.0
@@ -1686,9 +1686,9 @@ window.NUB_DATA = {
         "perCreditFee": 3000.0,
         "waiver": 70.0,
         "previousDues": 0.0,
-        "charge": 25200.0,
-        "receivable": 25200.0,
-        "received": 25200.0,
+        "charge": 25500.0,
+        "receivable": 25500.0,
+        "received": 25500.0,
         "presentDues": 0.0,
         "installments": {
           "first": 8480.0,
@@ -1718,8 +1718,8 @@ window.NUB_DATA = {
       },
       "financeSummary": {
         "semester": "Spring 2025",
-        "payable": 25200.0,
-        "paid": 25200.0,
+        "payable": 25500.0,
+        "paid": 25500.0,
         "dues": 0.0,
         "cumulativeDues": 0.0
       },
@@ -1733,7 +1733,7 @@ window.NUB_DATA = {
             "payable": 54000.0,
             "paymentDate": "08/04/2025",
             "receipt": "00195318",
-            "paid": 25200.0
+            "paid": 25500.0
           },
           {
             "head": "F/Asst.",
@@ -1758,11 +1758,11 @@ window.NUB_DATA = {
           {
             "date": "08/04/2025",
             "receipt": "00195318",
-            "amount": 25200.0
+            "amount": 25500.0
           }
         ],
-        "totalCost": 25200.0,
-        "totalPaid": 25200.0,
+        "totalCost": 25500.0,
+        "totalPaid": 25500.0,
         "dues": 0.0,
         "duesTill": 0.0
       },
@@ -2649,7 +2649,7 @@ window.NUB_DATA = {
         "perCreditFee": 3000.0,
         "waiver": 70.0,
         "previousDues": -20.0,
-        "charge": 25200.0,
+        "charge": 25500.0,
         "receivable": 21180.0,
         "received": 21180.0,
         "presentDues": 0.0,
@@ -2681,7 +2681,7 @@ window.NUB_DATA = {
       },
       "financeSummary": {
         "semester": "Summer 2026",
-        "payable": 25200.0,
+        "payable": 25500.0,
         "paid": 21180.0,
         "dues": 20.0,
         "cumulativeDues": 0.0
@@ -2724,7 +2724,7 @@ window.NUB_DATA = {
             "amount": 21180.0
           }
         ],
-        "totalCost": 25200.0,
+        "totalCost": 25500.0,
         "totalPaid": 21180.0,
         "dues": 20.0,
         "duesTill": 0.0
@@ -2831,10 +2831,10 @@ window.NUB_DATA = {
         "perCreditFee": 3000.0,
         "waiver": 70.0,
         "previousDues": 0.0,
-        "charge": 25200.0,
-        "receivable": 25200.0,
+        "charge": 25500.0,
+        "receivable": 25500.0,
         "received": 0.0,
-        "presentDues": 25200.0,
+        "presentDues": 25500.0,
         "installments": {
           "first": 8480.0,
           "second": 6360.0,
@@ -2863,10 +2863,10 @@ window.NUB_DATA = {
       },
       "financeSummary": {
         "semester": "Fall 2026",
-        "payable": 25200.0,
+        "payable": 25500.0,
         "paid": 0.0,
-        "dues": 25200.0,
-        "cumulativeDues": 25200.0
+        "dues": 25500.0,
+        "cumulativeDues": 25500.0
       },
       "financeDetail": {
         "semester": "Fall 2026",
@@ -2900,10 +2900,10 @@ window.NUB_DATA = {
           }
         ],
         "payments": [],
-        "totalCost": 25200.0,
+        "totalCost": 25500.0,
         "totalPaid": 0.0,
-        "dues": 25200.0,
-        "duesTill": 25200.0
+        "dues": 25500.0,
+        "duesTill": 25500.0
       },
       "isCurrent": true,
       "advisorApproved": "Yes",
@@ -2964,7 +2964,7 @@ window.NUB_DATA = {
       "semester": "Spring 2025",
       "date": "08/04/2025",
       "receipt": "00195318",
-      "amount": 25200.0,
+      "amount": 25500.0,
       "currency": "Taka"
     },
     {
@@ -3025,15 +3025,15 @@ window.NUB_DATA = {
     },
     {
       "semester": "Fall 2024",
-      "payable": 25200.0,
+      "payable": 25500.0,
       "paid": 17500.0,
       "dues": 3700.0,
       "cumulativeDues": 0.0
     },
     {
       "semester": "Spring 2025",
-      "payable": 25200.0,
-      "paid": 25200.0,
+      "payable": 25500.0,
+      "paid": 25500.0,
       "dues": 0.0,
       "cumulativeDues": 0.0
     },
@@ -3060,28 +3060,28 @@ window.NUB_DATA = {
     },
     {
       "semester": "Summer 2026",
-      "payable": 25200.0,
+      "payable": 25500.0,
       "paid": 21180.0,
       "dues": 20.0,
       "cumulativeDues": 0.0
     },
     {
       "semester": "Fall 2026",
-      "payable": 25200.0,
+      "payable": 25500.0,
       "paid": 0.0,
-      "dues": 25200.0,
-      "cumulativeDues": 25200.0
+      "dues": 25500.0,
+      "cumulativeDues": 25500.0
     }
   ],
   "financeTotal": {
     "payable": 206700.0,
     "paid": 185500.0,
-    "dues": 25200.0
+    "dues": 25500.0
   },
   "grandTotal": {
     "cost": 206700.0,
     "paid": 185500.0,
-    "dues": 25200.0
+    "dues": 25500.0
   },
   "schedules": [
     {

@@ -932,7 +932,7 @@
             return '<div class="info-row"><dt>' + esc(waiver.percentage) + '% waiver</dt><dd>' + esc(waiver.code) + '<button class="copy-btn" type="button" data-action="copy" data-copy="' + esc(waiver.code) + '" aria-label="Copy ' + esc(waiver.code) + '">' + icon('copy') + '</button></dd></div>';
           }).join('') +
           '<div class="info-row"><dt>Applied in fee calculation</dt><dd>' + esc(current.payable.waiver) + '%</dd></div>' +
-          '<div class="info-row"><dt>Current payable</dt><dd>' + money(25200) + '</dd></div>' +
+          '<div class="info-row"><dt>Current payable</dt><dd>' + money(25500) + '</dd></div>' +
         '</div><div class="form-actions"><a class="btn btn-soft btn-sm" href="#/cost-package">' + icon('layers') + 'Cost package</a><a class="btn btn-ghost btn-sm" href="#/payable">' + icon('wallet') + 'Payable list</a></div></div></section>' +
       '</div>' +
     '</div>';
@@ -949,7 +949,7 @@
         statCard('Package code', D.costPackage['Package Code'], '', 'Active · ' + D.costPackage.Currency, 'layers', 'blue') +
         statCard('Per-credit fee', money(current.payable.perCreditFee), '', current.totalCreditTaken + ' credits this semester', 'banknote', '') +
         statCard('Semester fee', money(5000), '', 'Charged each semester', 'calendar', 'amber') +
-        statCard('Current payable', money(25200), '', current.payable.waiver + '% waiver applied', 'wallet', 'purple') +
+        statCard('Current payable', money(25500), '', current.payable.waiver + '% waiver applied', 'wallet', 'purple') +
       '</div>' +
       '<div class="grid grid-main section-gap">' +
         '<section class="card"><div class="card-head"><div><h2>Package rates</h2><p>Fee heads returned by the portal</p></div>' + chip('Package ' + D.costPackage['Serial Number'], 'green') + '</div><div class="table-wrap"><table class="data-table"><thead><tr><th>Fee head</th><th>Frequency</th><th class="num">Amount</th></tr></thead><tbody>' + D.costPackage.rates.map(function (rate) {
