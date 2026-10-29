@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1740">
+  <title>Sign in · NUB Student Portal</title>
+  <meta name="description" content="NUB Student Portal concept redesign — a modern student dashboard for results, payments, schedules and academic records.">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="brand-panel" aria-label="About the portal">
+      <div class="brand-top">
+        <div class="logo-plate">
+          <img src="assets/img/nub-logo.png" alt="Northern University Bangladesh">
+        </div>
+        <span class="brand-badge">Student Portal</span>
+      </div>
+
+      <div class="brand-copy">
+        <p class="eyebrow light">Knowledge for Innovation and Change</p>
+        <h1>Your academic life, <em>beautifully organized.</em></h1>
+        <p class="lead">
+          One calm place for your results, registration, class schedule, payments and every deadline that matters this semester.
+        </p>
+
+        <ul class="brand-features">
+          <li>
+            <span class="feature-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 6-7"/></svg>
+            </span>
+            <div>
+              <strong>Results &amp; transcripts</strong>
+              <small>Semester-wise grades, CGPA trend and your full academic transcript.</small>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg>
+            </span>
+            <div>
+              <strong>Payments &amp; dues</strong>
+              <small>See what is paid, what is due and when the next installment arrives.</small>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+            </span>
+            <div>
+              <strong>Semester timeline</strong>
+              <small>Registration, classes, mid-terms and finals in a single view.</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="brand-footer">
+        <span>Concept redesign · Northern University Bangladesh</span>
+        <span>Concept build</span>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card" id="loginCard">
+        <div class="mobile-brand">
+          <img src="assets/img/nub-logo.png" alt="Northern University Bangladesh">
+          <span>Student Portal</span>
+        </div>
+
+        <p class="eyebrow">NUB Student Portal</p>
+        <h2>Welcome back, NUBIAN</h2>
+        <p class="login-sub">Sign in to pick up where you left off — results, payments and the rest of your semester.</p>
+
+        <form id="loginForm" novalidate>
+          <label class="field" for="studentId">
+            <span>Student ID</span>
+            <div class="input-wrap">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4M7 13h7"/><circle cx="17" cy="9" r="1"/></svg>
+              <input id="studentId" name="studentId" type="text" inputmode="numeric" autocomplete="username" placeholder="Enter your Student ID" value="41230301841" maxlength="16" required>
+            </div>
+          </label>
+
+          <label class="field" for="password">
+            <span>Password</span>
+            <div class="input-wrap has-toggle">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <button class="pw-toggle" id="pwToggle" type="button" aria-label="Show password" aria-pressed="false">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+          </label>
+
+          <div class="form-meta">
+            <label class="check">
+              <input type="checkbox" id="remember" checked>
+              <span>Remember me</span>
+            </label>
+            <a href="#" id="forgotLink">Forgot password?</a>
+          </div>
+
+          <p class="form-error" id="loginError" role="alert" hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+            <span id="loginErrorText"></span>
+          </p>
+
+          <button class="btn btn-primary btn-lg btn-block" id="loginButton" type="submit">
+            <span id="loginButtonText">Sign in</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+
+        <p class="login-help">Trouble signing in? Contact your campus ICT office.</p>
+      </div>
+
+      <footer class="login-footer">
+        <span>© 2026 NUB Student Portal · Concept</span>
+        <span>Not the official portal</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

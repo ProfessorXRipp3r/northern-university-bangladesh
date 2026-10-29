@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1740">
+  <title>Dashboard · NUB Student Portal</title>
+  <meta name="description" content="NUB Student Portal concept redesign — results, registration, schedules, payments and academic records for the student.">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="app-page">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <div class="app-shell" id="appShell">
+    <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="sidebar-head">
+        <a class="sidebar-brand" href="#/dashboard" aria-label="NUB Student Portal dashboard">
+          <span class="logo-plate small">
+            <img src="assets/img/nub-logo.png" alt="">
+          </span>
+          <span>
+            <strong>NUB</strong>
+            <small>Student Portal</small>
+          </span>
+        </a>
+        <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Close navigation">
+          <svg class="icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="sidebar-scroll">
+        <nav id="sidebarNav"></nav>
+      </div>
+
+      <div class="sidebar-foot">
+        <div class="mini-semester" id="miniSemester"></div>
+        <button class="logout-btn" id="logoutBtn" type="button">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+          <span>Sign out</span>
+        </button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn mobile-only" id="menuBtn" type="button" aria-label="Open navigation">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+          <div class="breadcrumb">
+            <a href="#/dashboard">Portal</a>
+            <span aria-hidden="true">/</span>
+            <strong id="pageTitle">Dashboard</strong>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <span class="live-chip" title="Live concept build">Live</span>
+
+          <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search pages">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+            <span>Search</span>
+            <kbd>⌘K</kbd>
+          </button>
+
+          <div class="notif-wrap">
+            <button class="icon-btn notif-bell" id="notifBtn" type="button" aria-label="Notifications" aria-haspopup="true" aria-expanded="false">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>
+              <span class="bell-dot" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown notif-dropdown" id="notifDropdown">
+              <div class="dropdown-head">
+                <strong>Notifications</strong>
+                <span>No new activity</span>
+              </div>
+              <div class="notif-empty">
+                <span class="empty-icon">
+                  <svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>
+                </span>
+                <strong>You're all caught up</strong>
+                <p>Notices about registration, results and payments will appear here.</p>
+                <a href="#/notifications">View notification page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-wrap">
+            <button class="profile-btn" id="profileBtn" type="button" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/student.jpg" alt="">
+              <span class="profile-meta">
+                <strong id="topName">Student</strong>
+                <small id="topId"></small>
+              </span>
+              <svg class="icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="dropdown profile-dropdown" id="profileDropdown">
+              <div class="dropdown-profile-head">
+                <img src="assets/img/student.jpg" alt="">
+                <div>
+                  <strong id="dropName">Student</strong>
+                  <span id="dropId"></span>
+                </div>
+              </div>
+              <a class="dropdown-item" href="#/profile">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.4 3.4-5 7-5s6.2 1.6 7 5"/></svg>
+                My profile
+              </a>
+              <a class="dropdown-item" href="#/profile/edit">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                Edit profile
+              </a>
+              <a class="dropdown-item" href="#/password">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                Change password
+              </a>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item danger" type="button" data-action="logout">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+                Sign out
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content" id="mainContent" tabindex="-1">
+        <div id="view"></div>
+      </main>
+
+      <footer class="app-footer">
+        <span>NUB Student Portal · Concept redesign</span>
+        <span>Concept build · <span id="year"></span></span>
+      </footer>
+    </div>
+  </div>
+
+  <div class="palette-overlay" id="palette" hidden>
+    <div class="palette" role="dialog" aria-modal="true" aria-label="Search pages">
+      <div class="palette-search">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input type="text" id="paletteInput" placeholder="Search pages — results, payments, schedule…" autocomplete="off" spellcheck="false">
+        <kbd>Esc</kbd>
+      </div>
+      <div class="palette-results" id="paletteResults"></div>
+      <div class="palette-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> to navigate</span>
+        <span><kbd>↵</kbd> to open</span>
+        <span style="margin-left:auto">NUB Portal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalRoot" hidden></div>
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
